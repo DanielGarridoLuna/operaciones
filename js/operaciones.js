@@ -41,6 +41,18 @@ function dividir() {
     if (n2 == 0) {
         alert("no se puede divir");
     } else {
-        alert("todo en orden");
+        let n1 = document.getElementById('num1').value;
+        let resultado;
+
+        resultado = n1 / n2;
+    
+        let resul = document.getElementById('result');
+    
+        resul.innerHTML =
+            `
+        <h1 class="display-1 text-white">Resultado de la resta ${n1} / ${n2} =</h1>
+        <h1 class="display-1 text-white">${resultado}</h1>
+        `;
+        alert("El resultado de la division de " + n1 + "/" + n2 + "=" + resultado);   
     }
 }
